@@ -1,16 +1,23 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: #000 !important;
+	color: white !important;
+	height: 99vh;
+	letter-spacing: 1px;
+	background-image: url("../public/Assets/dark-marble-bg.jpg");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.active {
+	border: none;
+	box-shadow: inset 2px 2px 2px #777, inset -2px -2px 2px #ccc;
 }
 
-* {
-  box-sizing: border-box;
+.chat * {
+	transition: all 0.3s ease-in;
+	letter-spacing: 2px;
+}
+
+.chat:hover span {
+	color: #777;
+	letter-spacing: 2px;
 }
